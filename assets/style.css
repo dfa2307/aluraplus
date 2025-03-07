@@ -9,11 +9,15 @@
 }
 
 body{
-    background-image: url("../img/Background.png");
+    background-color: #000000;
 }
 
 a{
     display: block;
+}
+
+.principal{
+    height: 100vh;
 }
 
 .home{
@@ -22,19 +26,24 @@ a{
     grid-template-columns: 50% 50%;
     align-items: center;
     margin-left: 54px;
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .conteudo-home{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 588px;
 }
 
 .titulo-home{
-    font-size: 28;
+    font-size: 28px;
     font-family: "Inter";
     text-align: center;
     margin-bottom: 22px;
+    font-weight: bold;
 }
 
 .combo-home{
@@ -45,15 +54,14 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px
+    gap: 16px;
 }
 
 .link-combo{
     background-color: #167BF7;
-    padding: 16px;
-    width: 512px;
-    text-align: center;
-    border-radius: 10px;
+    padding: 1em;
+    display: block;
+    border-radius: 5px;
     font-family: "Inter";
     font-size: 1rem;
 }
